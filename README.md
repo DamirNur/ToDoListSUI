@@ -1,1 +1,5 @@
 # ToDoListSUI
+
+Stack:
+SwiftUI
+Firebase
