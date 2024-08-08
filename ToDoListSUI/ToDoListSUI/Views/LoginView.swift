@@ -9,40 +9,41 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
-                HeaderView()
+                HeaderView(title: AppStrings.LoginViewStrings.title,
+                           subtitle: AppStrings.LoginViewStrings.subtitle,
+                           angle: Constants.headerViewAngle,
+                           background: .login)
                 
                 Form {
-                    TextField(AppStrings.LoginViewStrings.emailText, text: $email)
+                    TextField(AppStrings.LoginViewStrings.emailText, text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    SecureField(AppStrings.LoginViewStrings.passwordText, text: $password)
+                        .textInputAutocapitalization(.none)
+                        .autocorrectionDisabled()
+                    SecureField(AppStrings.LoginViewStrings.passwordText, text: $viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
+                        .textInputAutocapitalization(.none)
+                        .autocorrectionDisabled()
                     
-                    Button {
-                        // Add actions
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundStyle(.blue)
-                            Text(AppStrings.LoginViewStrings.loginButton)
-                                .foregroundStyle(.white)
-                                .bold()
-                        }
+                    TLButton(
+                        title: AppStrings.LoginViewStrings.loginButton,
+                        background: .blue
+                    ) {
+                        // Add Action
                     }
-                    .padding(.horizontal, 20)
                 }
+                .offset(y: Constants.formOffset)
                 
                 VStack {
                     Text(AppStrings.LoginViewStrings.createAccountText)
                     NavigationLink(AppStrings.LoginViewStrings.createAccountButton, 
                                    destination: RegisterView())
                 }
-                .padding(50)
+                .padding(Constants.registerButtonPadding)
                 
                 Spacer()
             }
@@ -50,6 +51,8 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
+fileprivate enum Constants {
+    static let headerViewAngle: CGFloat = 15.0
+    static let registerButtonPadding: CGFloat = 50.0
+    static let formOffset: CGFloat = -50.0
 }
