@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct HeaderView: View {
+    
+    let title: String
+    let subtitle: String
+    let angle: Double
+    let background: Color
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: .zero)
-                .foregroundStyle(.mintGreen)
-                .rotationEffect(Angle(degrees: UIConstants.upperViewRotation))
+                .foregroundStyle(background)
+                .rotationEffect(Angle(degrees: angle))
             
             VStack {
-                Text(AppStrings.LoginViewStrings.title)
+                Text(title)
                     .foregroundStyle(.white)
                     .font(.largeTitle)
                     .bold()
-                Text(AppStrings.LoginViewStrings.subtitle)
+                Text(subtitle)
                     .foregroundStyle(.white)
                     .font(.title3)
             }
@@ -34,8 +40,7 @@ struct HeaderView: View {
 fileprivate enum UIConstants {
     static let upperViewMultiplier: CGFloat = 3.0
     static let upperViewHeight: CGFloat = 300.0
-    static let upperViewRotation: CGFloat = 15.0
-    static let upperViewVerticalOffset: CGFloat = -100
+    static let upperViewVerticalOffset: CGFloat = -140
     
-    static let titlePadding: CGFloat = 50
+    static let titlePadding: CGFloat = 100
 }
