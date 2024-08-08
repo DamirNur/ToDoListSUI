@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D77099C2C63C5D0004F8D82 /* ToDoListSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77099B2C63C5D0004F8D82 /* ToDoListSUIApp.swift */; };
-		6D77099E2C63C5D0004F8D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77099D2C63C5D0004F8D82 /* ContentView.swift */; };
+		6D77099E2C63C5D0004F8D82 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77099D2C63C5D0004F8D82 /* MainView.swift */; };
 		6D7709A02C63C5D1004F8D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D77099F2C63C5D1004F8D82 /* Assets.xcassets */; };
 		6D7709A32C63C5D1004F8D82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7709A22C63C5D1004F8D82 /* Preview Assets.xcassets */; };
 		6D7709AB2C63C69D004F8D82 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D7709AA2C63C69D004F8D82 /* FirebaseAnalytics */; };
@@ -17,15 +17,49 @@
 		6D7709B12C63C69D004F8D82 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 6D7709B02C63C69D004F8D82 /* FirebaseAppCheck */; };
 		6D7709B32C63C69D004F8D82 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6D7709B22C63C69D004F8D82 /* FirebaseAppDistribution-Beta */; };
 		6D7709B52C63C724004F8D82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D7709B42C63C724004F8D82 /* GoogleService-Info.plist */; };
+		6D7709BA2C63E1E7004F8D82 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709B92C63E1E7004F8D82 /* ProfileView.swift */; };
+		6D7709BC2C63E236004F8D82 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709BB2C63E236004F8D82 /* ToDoListView.swift */; };
+		6D7709BE2C63E24E004F8D82 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709BD2C63E24E004F8D82 /* NewItemView.swift */; };
+		6D7709C02C63E271004F8D82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709BF2C63E271004F8D82 /* LoginView.swift */; };
+		6D7709C22C63E289004F8D82 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709C12C63E289004F8D82 /* RegisterView.swift */; };
+		6D7709C42C63FC47004F8D82 /* ToDoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709C32C63FC47004F8D82 /* ToDoListItemView.swift */; };
+		6D7709C62C63FCA8004F8D82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709C52C63FCA8004F8D82 /* User.swift */; };
+		6D7709C82C63FCCA004F8D82 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709C72C63FCCA004F8D82 /* ToDoListItem.swift */; };
+		6D7709CA2C63FD25004F8D82 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709C92C63FD25004F8D82 /* MainViewModel.swift */; };
+		6D7709CC2C63FD40004F8D82 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709CB2C63FD40004F8D82 /* ProfileViewModel.swift */; };
+		6D7709CE2C63FD92004F8D82 /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709CD2C63FD92004F8D82 /* ToDoListViewModel.swift */; };
+		6D7709D02C63FDA4004F8D82 /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709CF2C63FDA4004F8D82 /* NewItemViewModel.swift */; };
+		6D7709D22C63FDB6004F8D82 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709D12C63FDB6004F8D82 /* LoginViewModel.swift */; };
+		6D7709D42C63FDC7004F8D82 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709D32C63FDC7004F8D82 /* RegisterViewModel.swift */; };
+		6D7709D62C63FE16004F8D82 /* ToDoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709D52C63FE16004F8D82 /* ToDoListItemViewModel.swift */; };
+		6D7709D92C6401FC004F8D82 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709D82C6401FC004F8D82 /* AppStrings.swift */; };
+		6D7709DB2C640B50004F8D82 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7709DA2C640B50004F8D82 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D7709982C63C5D0004F8D82 /* ToDoListSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D77099B2C63C5D0004F8D82 /* ToDoListSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListSUIApp.swift; sourceTree = "<group>"; };
-		6D77099D2C63C5D0004F8D82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D77099D2C63C5D0004F8D82 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6D77099F2C63C5D1004F8D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D7709A22C63C5D1004F8D82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D7709B42C63C724004F8D82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D7709B92C63E1E7004F8D82 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6D7709BB2C63E236004F8D82 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		6D7709BD2C63E24E004F8D82 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		6D7709BF2C63E271004F8D82 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6D7709C12C63E289004F8D82 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		6D7709C32C63FC47004F8D82 /* ToDoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemView.swift; sourceTree = "<group>"; };
+		6D7709C52C63FCA8004F8D82 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6D7709C72C63FCCA004F8D82 /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
+		6D7709C92C63FD25004F8D82 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6D7709CB2C63FD40004F8D82 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		6D7709CD2C63FD92004F8D82 /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
+		6D7709CF2C63FDA4004F8D82 /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
+		6D7709D12C63FDB6004F8D82 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6D7709D32C63FDC7004F8D82 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		6D7709D52C63FE16004F8D82 /* ToDoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewModel.swift; sourceTree = "<group>"; };
+		6D7709D82C6401FC004F8D82 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		6D7709DA2C640B50004F8D82 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +97,12 @@
 		6D77099A2C63C5D0004F8D82 /* ToDoListSUI */ = {
 			isa = PBXGroup;
 			children = (
+				6D7709B82C63E0A9004F8D82 /* Models */,
+				6D7709B72C63E08B004F8D82 /* ViewModels */,
+				6D7709B62C63E07F004F8D82 /* Views */,
+				6D7709D72C640181004F8D82 /* Resources */,
 				6D7709B42C63C724004F8D82 /* GoogleService-Info.plist */,
 				6D77099B2C63C5D0004F8D82 /* ToDoListSUIApp.swift */,
-				6D77099D2C63C5D0004F8D82 /* ContentView.swift */,
 				6D77099F2C63C5D1004F8D82 /* Assets.xcassets */,
 				6D7709A12C63C5D1004F8D82 /* Preview Content */,
 			);
@@ -78,6 +115,52 @@
 				6D7709A22C63C5D1004F8D82 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D7709B62C63E07F004F8D82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D77099D2C63C5D0004F8D82 /* MainView.swift */,
+				6D7709B92C63E1E7004F8D82 /* ProfileView.swift */,
+				6D7709BB2C63E236004F8D82 /* ToDoListView.swift */,
+				6D7709BD2C63E24E004F8D82 /* NewItemView.swift */,
+				6D7709BF2C63E271004F8D82 /* LoginView.swift */,
+				6D7709C12C63E289004F8D82 /* RegisterView.swift */,
+				6D7709C32C63FC47004F8D82 /* ToDoListItemView.swift */,
+				6D7709DA2C640B50004F8D82 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D7709B72C63E08B004F8D82 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6D7709C92C63FD25004F8D82 /* MainViewModel.swift */,
+				6D7709CB2C63FD40004F8D82 /* ProfileViewModel.swift */,
+				6D7709CD2C63FD92004F8D82 /* ToDoListViewModel.swift */,
+				6D7709CF2C63FDA4004F8D82 /* NewItemViewModel.swift */,
+				6D7709D12C63FDB6004F8D82 /* LoginViewModel.swift */,
+				6D7709D32C63FDC7004F8D82 /* RegisterViewModel.swift */,
+				6D7709D52C63FE16004F8D82 /* ToDoListItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6D7709B82C63E0A9004F8D82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D7709C52C63FCA8004F8D82 /* User.swift */,
+				6D7709C72C63FCCA004F8D82 /* ToDoListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D7709D72C640181004F8D82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D7709D82C6401FC004F8D82 /* AppStrings.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +244,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D77099E2C63C5D0004F8D82 /* ContentView.swift in Sources */,
+				6D7709D92C6401FC004F8D82 /* AppStrings.swift in Sources */,
+				6D7709C02C63E271004F8D82 /* LoginView.swift in Sources */,
+				6D77099E2C63C5D0004F8D82 /* MainView.swift in Sources */,
+				6D7709CA2C63FD25004F8D82 /* MainViewModel.swift in Sources */,
+				6D7709D42C63FDC7004F8D82 /* RegisterViewModel.swift in Sources */,
+				6D7709BA2C63E1E7004F8D82 /* ProfileView.swift in Sources */,
+				6D7709DB2C640B50004F8D82 /* HeaderView.swift in Sources */,
+				6D7709C22C63E289004F8D82 /* RegisterView.swift in Sources */,
+				6D7709BC2C63E236004F8D82 /* ToDoListView.swift in Sources */,
+				6D7709CC2C63FD40004F8D82 /* ProfileViewModel.swift in Sources */,
+				6D7709C62C63FCA8004F8D82 /* User.swift in Sources */,
+				6D7709D62C63FE16004F8D82 /* ToDoListItemViewModel.swift in Sources */,
+				6D7709D22C63FDB6004F8D82 /* LoginViewModel.swift in Sources */,
+				6D7709D02C63FDA4004F8D82 /* NewItemViewModel.swift in Sources */,
+				6D7709C42C63FC47004F8D82 /* ToDoListItemView.swift in Sources */,
 				6D77099C2C63C5D0004F8D82 /* ToDoListSUIApp.swift in Sources */,
+				6D7709CE2C63FD92004F8D82 /* ToDoListViewModel.swift in Sources */,
+				6D7709C82C63FCCA004F8D82 /* ToDoListItem.swift in Sources */,
+				6D7709BE2C63E24E004F8D82 /* NewItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
