@@ -9,9 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     
-    @State var fullName = ""
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = RegisterViewModel()
     
     var body: some View {
         VStack {
@@ -19,18 +17,18 @@ struct RegisterView: View {
                        subtitle: AppStrings.RegisterViewStrings.subtitle,
                        angle: Constants.headerViewAngle,
                        background: .register)
-            .offset(y: -40)
+            .offset(y: Constants.headerViewOffset)
             
             Form {
-                TextField(AppStrings.RegisterViewStrings.fullName, text: $fullName)
+                TextField(AppStrings.RegisterViewStrings.fullName, text: $viewModel.fullName)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .textInputAutocapitalization(.none)
                     .autocorrectionDisabled()
-                TextField(AppStrings.RegisterViewStrings.emailText, text: $email)
+                TextField(AppStrings.RegisterViewStrings.emailText, text: $viewModel.email)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .textInputAutocapitalization(.none)
                     .autocorrectionDisabled()
-                SecureField(AppStrings.RegisterViewStrings.passwordText, text: $password)
+                SecureField(AppStrings.RegisterViewStrings.passwordText, text: $viewModel.password)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .textInputAutocapitalization(.none)
                     .autocorrectionDisabled()
@@ -39,7 +37,7 @@ struct RegisterView: View {
                     title: AppStrings.RegisterViewStrings.createButton,
                     background: .green
                 ) {
-                    // Add Action
+                    viewModel.register()
                 }
             }
             .offset(y: Constants.formOffset)
@@ -49,9 +47,6 @@ struct RegisterView: View {
 
 fileprivate enum Constants {
     static let headerViewAngle: CGFloat = -15.0
+    static let headerViewOffset: CGFloat = -40.0
     static let formOffset: CGFloat = -90.0
-}
-
-#Preview {
-    RegisterView()
 }
