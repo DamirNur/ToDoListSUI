@@ -8,6 +8,11 @@
 import Foundation
 
 struct AppStrings {
+    enum DBCollections {
+        static let users = "users"
+        static let todos = "todos"
+    }
+    
     enum LoginViewStrings {
         static let title = "To Do List"
         static let subtitle = "Get things done"
