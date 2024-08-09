@@ -23,11 +23,10 @@ struct HeaderView: View {
             VStack {
                 Text(title)
                     .foregroundStyle(.white)
-                    .font(.largeTitle)
-                    .bold()
+                    .font(AppFonts.title.font)
                 Text(subtitle)
                     .foregroundStyle(.white)
-                    .font(.title3)
+                    .font(AppFonts.subtitle.font)
             }
             .padding(.top, UIConstants.titlePadding)
         }

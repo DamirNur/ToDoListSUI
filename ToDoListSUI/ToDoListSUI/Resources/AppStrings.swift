@@ -28,4 +28,21 @@ struct AppStrings {
         static let passwordText = "Password"
         static let createButton = "Create Account"
     }
+    
+    enum ToDoListViewStrings {
+        static let title = "To Do List"
+    }
+    
+    enum ProfileViewStrings {
+        static let title = "Profile"
+    }
+    
+    enum NewItemViewStrings {
+        static let title = "New Item"
+        static let formTitle = "Title"
+        static let formDate = "Due Date"
+        static let buttonTitle = "Save"
+        static let alertTitle = "Error"
+        static let alertMessage = "Please fill in all fields and select due date that is today or newer."
+    }
 }
