@@ -16,6 +16,8 @@ struct AppStrings {
         static let loginButton = "Log In"
         static let createAccountText = "New around here?"
         static let createAccountButton = "Create an account"
+        static let errorFillFields = "Please fill in all fields."
+        static let errorValidEmail = "Please enter valid email."
     }
     
     enum RegisterViewStrings {
