@@ -73,7 +73,3 @@ fileprivate enum Constants {
     static let buttonWidth: CGFloat = 180.0
     static let buttonHeight: CGFloat = 50.0
 }
-
-#Preview {
-    ProfileView()
-}
