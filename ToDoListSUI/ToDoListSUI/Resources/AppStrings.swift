@@ -42,6 +42,11 @@ struct AppStrings {
     
     enum ProfileViewStrings {
         static let title = "Profile"
+        static let nameTitle = "Name: "
+        static let emailTitle = "Email: "
+        static let membertitle = "Member Since:"
+        static let logOut = "Log Out"
+        static let loadingText = "Loading Profile..."
     }
     
     enum NewItemViewStrings {
