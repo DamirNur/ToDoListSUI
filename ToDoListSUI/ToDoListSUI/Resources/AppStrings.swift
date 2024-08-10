@@ -11,6 +11,7 @@ struct AppStrings {
     enum DBCollections {
         static let users = "users"
         static let todos = "todos"
+        static let userId = "user_id"
     }
     
     enum LoginViewStrings {
@@ -36,6 +37,7 @@ struct AppStrings {
     
     enum ToDoListViewStrings {
         static let title = "To Do List"
+        static let deleteSwipe = "Delete"
     }
     
     enum ProfileViewStrings {

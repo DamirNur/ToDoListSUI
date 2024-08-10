@@ -135,10 +135,10 @@
 				6D7709DD2C64AA35004F8D82 /* CustomViews */,
 				6D77099D2C63C5D0004F8D82 /* MainView.swift */,
 				6D7709B92C63E1E7004F8D82 /* ProfileView.swift */,
-				6D7709BB2C63E236004F8D82 /* ToDoListView.swift */,
 				6D7709BD2C63E24E004F8D82 /* NewItemView.swift */,
 				6D7709BF2C63E271004F8D82 /* LoginView.swift */,
 				6D7709C12C63E289004F8D82 /* RegisterView.swift */,
+				6D7709BB2C63E236004F8D82 /* ToDoListView.swift */,
 				6D7709C32C63FC47004F8D82 /* ToDoListItemView.swift */,
 			);
 			path = Views;
